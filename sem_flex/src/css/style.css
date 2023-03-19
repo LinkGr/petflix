@@ -61,6 +61,7 @@ main {
 /*DESTAQUES DE PRODUTOS*/
 .destaques {
   margin-top: 2%;
+  list-style: none;
 }
 .destaques > h3 {
   text-align: center;
