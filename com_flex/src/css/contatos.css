@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --red: #ed1c24;
+  --red-little-dark: #b9151b;
+  --red-dark: #a41217;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  font-family: "Lato", sans-serif;
+  height: 75vh;
+}
+
+#formulario-email {
+  transition: 350ms;
+}
+#formulario-email:hover, #redes:hover {
+  transform: scale(1.02);
+}
+#formulario-email > fieldset {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.094);
+  padding: 5%;
+  border: 0;
+  border-radius: 2vw;
+  color: var(--red-dark);
+}
+#formulario-email > fieldset > h3 {
+  font-size: 1.8rem;
+  padding-bottom: 4%;
+}
+#formulario-email > fieldset > section {
+  padding-bottom: 3%;
+}
+#formulario-email > fieldset > section > label {
+  font-size: 1.3rem;
+  padding-right: 2%;
+}
+#formulario-email > fieldset > section > input,
+#formulario-email > fieldset > section > textarea {
+  border: 1px dashed rgba(62, 0, 0, 0.215);
+  padding: 1% 2% 1% 2%;
+  background-color: #dfd9d972;
+}
+#email-submit {
+  border-radius: 100vw;
+  border: 2px solid var(--red-dark);
+  color: var(--red-dark);
+  font-weight: bold;
+  background-color: #a4121700;
+  padding: 2% 4% 2% 4%;
+  transition: 200ms;
+}
+#email-submit:hover {
+  background-color: var(--red-dark);
+  color: rgb(243, 243, 243);
+}
+.msg-email {
+  margin-bottom: 2%;
+}
+
+.tamanhos {
+  width: 30vw;
+  height: 10vw;
+}
+#redes {
+  color: var(--red-dark);
+  border-radius: 2vw;
+  padding: clamp(0px, 10%, 14px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.094);
+  transition: 350ms;
+}
+.rede {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.rede > p {
+  font-size: 2.1rem;
+  margin-bottom: 3%;
+}
+.rede > img {
+  height: 3rem;
+  margin-left: 5%;
+}
+.telefone {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.telefone > p {
+  font-size: 2.1rem;
+}
+.telefone > img {
+  height: 3rem;
+  margin-left: 5%;
+}

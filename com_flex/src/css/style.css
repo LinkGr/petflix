@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --red: #ED1C24;
+  --red-little-dark: #b9151b;
+  --red-dark: #a41217;
+}
+
+/*MAIN*/
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*CARROSEL*/
+#carrossel {
+  width: 100%;
+  height: 60vh;
+  margin-top: 1%;
+  overflow: hidden;
+}
+#carrossel>figure {
+  position: relative;
+  width: 500%;
+  height: 100%;
+  animation: carrossel-work 20s infinite;
+}
+#carrossel>figure>a>img {
+  width: 20%;
+  height: 100%;
+  float: left;
+  object-fit: contain;
+}
+@keyframes carrossel-work {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  33% {
+    left: -100%;
+  }
+  63% {
+    left: -100%;
+  }
+  66% {
+    left: -200%;
+  }
+  96% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+
+
+/*DESTAQUES DE PRODUTOS*/
+.destaques {
+  margin-top: 2%;
+}
+.destaques > h3 {
+  text-align: center;
+  font-size: 2.3vw;
+  color: var(--red);
+  margin-bottom: 3%;
+}
+.todos-itens {
+   margin-left: 8.2%;
+}
+.item-destaque {
+  float: left;
+  width: 18%;
+  padding-bottom: 1%;
+  
+  transition: 350ms;
+  margin-bottom: 2%;
+}
+.item-destaque:hover {
+  transform: scale(1.03);
+  background-color: #f3f3f3;
+}
+.item-destaque > img {
+  width: 100%;
+}
+.item-descricao {
+  padding: 0% 4% 0% 4%;
+  color: var(--red);
+  font-weight: 800;
+}
+.item-descricao > h4 {
+  text-align: justify;
+  font-size: 1.1rem;
+  word-wrap: normal;
+  height: 6vw;
+  text-shadow: 0px 0px 1px currentColor;
+}
+.item-descricao > p {
+  font-size: 1.6rem;
+  margin-bottom: 9%;
+  text-shadow: 0px 0px 1px currentColor;
+}
+.item-descricao > section {
+  width: 100%;
+  text-align: center;
+}
+.item-descricao > section > button {
+  display: inline-block;
+  padding: 2% 4% 2% 4%;
+  border: 2px solid var(--red);
+  border-radius: 100vw;
+  background-color: #3a47b800;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: 200ms;
+}
+.item-descricao > section > button:hover {
+  color: #eaeaea;
+  background-color: var(--red);
+}
